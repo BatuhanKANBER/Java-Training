@@ -7,6 +7,7 @@ public class Main {
 
         worker.chanegeUsedSystem("Linux");
         worker.changeSalary(50000);
+        
         manager.changeResponsWorkersCount(8);
         manager.changeDepartment("İnsan Kaynakları");
 
