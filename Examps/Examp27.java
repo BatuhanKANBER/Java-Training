@@ -1,8 +1,8 @@
 package Examps;
-//Anagram
+//Reverse
 public class Examp27 {
 
-    public static boolean isAnagram(String s1, String s2){
+    public static boolean isReverse(String s1, String s2){
         int count = 0;
 
         int len1 = s1.length();
@@ -29,7 +29,7 @@ public class Examp27 {
         return false;
     }
 
-    public static String anagram(String s1){
+    public static String reverse(String s1){
         StringBuilder sAnagram = new StringBuilder();
         int len = s1.length();
         char[] chArr = s1.toCharArray();
@@ -42,11 +42,11 @@ public class Examp27 {
     }
     public static void main(String[] args) {
         String s1 = "batuhan";
-        System.out.println(s1 + " kelimesinin anagramı: " + anagram(s1));
-        String s2 = anagram(s1);
+        System.out.println(s1 + " kelimesinin tersi: " + reverse(s1));
+        String s2 = reverse(s1);
 
-        if (isAnagram(s1, s2)){
-            System.out.println(s2 + " kelimesi " + s1 + " kelimesinin anagramı.");
+        if (isReverse(s1, s2)){
+            System.out.println(s2 + " kelimesi " + s1 + " kelimesinin tersi.");
         }
     }
 }
