@@ -14,5 +14,18 @@ public class Main {
 
         WriterClass<Integer> integerWriterClass = new WriterClass<>();
         integerWriterClass.writer(integers);
+
+        System.out.println("*******************************************");
+
+        GenericClass genericClass1 = new GenericClass();
+        GenericClass genericClass2 = new GenericClass();
+
+        System.out.println(genericClass1);
+
+        genericClass1.setValue(28);
+        genericClass2.setValue("28");
+
+        genericClass1.showClassName();
+        genericClass2.showClassName();
     }
 }
